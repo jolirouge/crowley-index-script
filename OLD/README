@@ -1,0 +1,25 @@
+## README file
+## Chris Crowley
+## chris@montance.com
+#
+## Updated 2013-03-25: something about larry
+
+
+## Change permissions to make the script executable:
+
+chmod 755 make_index.pl
+
+## Fix line endings if the text files were created on windows:
+
+dos2unix 401.*
+
+## Run the program like so:
+
+./make_index.pl 401.1 401.2 401.3 401.4 401.5 401.6 > index.txt
+
+
+## Optionally, open the index.txt  file in a word editor (like Libre Office) and add page numbers ( 1 of 24, for example).  This will help you keep the pages in order in case something unexpected happens.
+#
+#
+#
+# The _larry_version script is a user contributed change that addresses dos2unix, and deals gracefully with trailing semi-colons on lines.
